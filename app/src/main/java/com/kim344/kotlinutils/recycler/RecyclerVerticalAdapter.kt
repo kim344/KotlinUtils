@@ -50,7 +50,7 @@ class RecyclerVerticalAdapter(
 
         val itemVertical = itemView?.findViewById<ConstraintLayout>(R.id.item_vertical)
         val dogImage = itemView?.findViewById<ImageView>(R.id.img_vertical_dog_image)
-        val dogName = itemView?.findViewById<TextView>(R.id.txt_horizontal_dog_name)
+        val dogName = itemView?.findViewById<TextView>(R.id.txt_vertical_dog_name)
         val dogAge = itemView?.findViewById<TextView>(R.id.txt_vertical_dog_age)
         val dogGender = itemView?.findViewById<TextView>(R.id.txt_vertical_dog_gender)
 

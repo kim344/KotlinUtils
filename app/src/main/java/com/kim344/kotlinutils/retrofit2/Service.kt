@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface Service {
     @GET("/answers?order=desc&sort=activity&site=stackoverflow")
-    fun getAnswers(): Call<Model>
+    fun getAnswers(): Call<Model.VO>
 }
