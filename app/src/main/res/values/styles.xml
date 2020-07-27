@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--    Toolbar -->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+
 </resources>

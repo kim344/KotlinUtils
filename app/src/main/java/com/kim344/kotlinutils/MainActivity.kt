@@ -2,7 +2,10 @@ package com.kim344.kotlinutils
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.kim344.kotlinutils.dialog.DialogActivity
 import com.kim344.kotlinutils.fragment.FragmentActivity
@@ -12,11 +15,15 @@ import com.kim344.kotlinutils.retrofit2.RetrofitActivity
 import com.kim344.kotlinutils.tablayout.TabLayoutActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Toolbar Sample"
 
         btn_fragment.setOnClickListener(this)
         btn_recycler.setOnClickListener(this)
@@ -25,6 +32,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_permission.setOnClickListener(this)
         btn_dialog.setOnClickListener(this)
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val menuInflater = menuInflater
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings1 -> Toast.makeText(this,"Item1",Toast.LENGTH_SHORT).show()
+            R.id.action_settings2 -> Toast.makeText(this,"Item2",Toast.LENGTH_SHORT).show()
+            R.id.action_settings3 -> Toast.makeText(this,"Item3",Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onClick(view: View?) {
