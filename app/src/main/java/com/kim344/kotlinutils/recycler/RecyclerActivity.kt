@@ -16,7 +16,7 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler)
 
-        for (i in 0..2) {
+        for (i in 0..8) {
             mVerticalDogList.add(RecyclerVerticalModel(R.drawable.dog00, "갈색이", 5, "수컷"))
             mVerticalDogList.add(RecyclerVerticalModel(R.drawable.dog01, "회색이", 10, "암컷"))
             mVerticalDogList.add(RecyclerVerticalModel(R.drawable.dog02, "흰둥이", 8, "수컷"))
@@ -24,7 +24,6 @@ class RecyclerActivity : AppCompatActivity() {
             mVerticalDogList.add(RecyclerVerticalModel(R.drawable.dog04, "두더지", 3, "암컷"))
             mVerticalDogList.add(RecyclerVerticalModel(R.drawable.dog05, "누렁이", 1, "수컷"))
         }
-
 
         //세로 Recycler Setting
         recycler_vertical?.adapter = RecyclerVerticalAdapter(
@@ -34,6 +33,10 @@ class RecyclerActivity : AppCompatActivity() {
         )
         recycler_vertical?.layoutManager = LinearLayoutManager(this@RecyclerActivity)
         recycler_vertical?.itemAnimator = DefaultItemAnimator()
+
+        btn_top.setOnClickListener {
+            recycler_vertical.smoothScrollToPosition(0)
+        }
 
         for (i in 0..2) {
             mHorizontalDogList.add(RecyclerHorizontalModel(R.drawable.dog00, "갈색이",5))
