@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_retrofit2.setOnClickListener(this)
         btn_permission.setOnClickListener(this)
         btn_dialog.setOnClickListener(this)
+        btn_motion.setOnClickListener(this)
 
     }
 
@@ -80,6 +81,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_dialog -> {
                 val intent = Intent(this@MainActivity, DialogActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.btn_motion -> {
+                val intent = Intent(this@MainActivity, MotionActivity::class.java)
                 startActivity(intent)
             }
 

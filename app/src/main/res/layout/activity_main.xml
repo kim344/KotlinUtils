@@ -74,5 +74,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_permission"/>
 
+    <Button
+        android:id="@+id/btn_motion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/motion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dialog"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

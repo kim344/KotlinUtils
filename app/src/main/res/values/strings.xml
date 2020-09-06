@@ -7,6 +7,7 @@
     <string name="retrofit2">Retrofit2</string>
     <string name="permission">Permission</string>
     <string name="dialog">Dialog</string>
+    <string name="motion">Motion Editor</string>
 
     <string name="txt_rc_horizontal">Horizontal RecyclerView</string>
     <string name="txt_rc_vertical">Vertical RecyclerView</string>
@@ -36,4 +37,7 @@
     <string name="dialog_yes">Yes</string>
     <string name="activity_confirm">OK</string>
 
+    <string name="app_motion_name">MotionAnimationPOC</string>
+    <string name="click_me">Click Me</string>
+    <string name="rising_sun">Rising Sun</string>
 </resources>

@@ -25,7 +25,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/ToolbarTheme" tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".NinePatchActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -40,6 +40,7 @@
         <activity android:name=".retrofit2.RetrofitActivity"/>
         <activity android:name=".permission.PermissionActivity"/>
         <activity android:name=".dialog.DialogActivity"/>
+        <activity android:name=".MotionActivity"/>
 
     </application>
 
